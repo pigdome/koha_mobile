@@ -146,7 +146,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
             ),
             style: ElevatedButton.styleFrom(
               // primary: Color(0xFF0070BA),
-              primary: Color(0xff1546A0),
+              backgroundColor: Color(0xff1546A0),
               // fixedSize: Size(90, 100),
               fixedSize: Size(96, 108),
               shadowColor: Color(0xFF0070BA).withOpacity(0.618),
@@ -180,8 +180,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
             ]),
             style: ElevatedButton.styleFrom(
               // fixedSize: Size(90, 100),
-              fixedSize: Size(96, 108),
-              primary: Colors.white,
+              fixedSize: Size(96, 108), backgroundColor: Colors.white,
               shadowColor: Color(0xffF5F7FA).withOpacity(0.618),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12)),
@@ -297,8 +296,7 @@ class HomeDashboardScreenState extends State<HomeDashboardScreen> {
 
   Widget _buildTransactionActivities(BuildContext context) {
     if (error != null) {
-      WidgetsBinding.instance!
-          .addPostFrameCallback((_) => showErrorAlert(context, error!));
+      WidgetsBinding.instance.addPostFrameCallback((_) => showErrorAlert(context, error!));
 
       return activitiesLoadingList(10);
     } else if (allTransactions.isEmpty) {

@@ -48,7 +48,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
               fontWeight: FontWeight.w700),
         ),
         style: ElevatedButton.styleFrom(
-            primary: Colors.white,
+            backgroundColor: Colors.white,
             shape: CircleBorder(),
             elevation: 0,
             // elevation: 0.618,
@@ -65,7 +65,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
               fontWeight: FontWeight.w700),
         ),
         style: ElevatedButton.styleFrom(
-            primary: Colors.white,
+            backgroundColor: Colors.white,
             shape: CircleBorder(),
             // elevation: 0.618,
             elevation: 0,
@@ -87,7 +87,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
           ),
         ),
         style: ElevatedButton.styleFrom(
-            primary: Colors.white,
+            backgroundColor: Colors.white,
             shape: CircleBorder(),
             // elevation: .618,
             // shadowColor: Color(0xffF5F7FA)
@@ -295,7 +295,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
               onPressed: _makeTransaction,
               child: Text(transactionButton),
               style: ElevatedButton.styleFrom(
-                  primary: Colors.transparent,
+                  backgroundColor: Colors.transparent,
                   shadowColor: Colors.transparent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20))),
@@ -374,7 +374,7 @@ class _FundTransferScreenState extends State<FundTransferScreen> {
                 fontWeight: FontWeight.w700),
           ),
           style: ElevatedButton.styleFrom(
-              primary: Colors.white,
+              backgroundColor: Colors.white,
               shape: CircleBorder(),
               elevation: 0,
               // shadowColor: Color(0xffF5F7FA)

@@ -155,7 +155,7 @@ List<String> searchHintsList = [
                               .contains("error")
                           ? snapshot.data![0]
                           : snapshot.data![1];
-                      WidgetsBinding.instance!.addPostFrameCallback(
+                      WidgetsBinding.instance.addPostFrameCallback(
                           (_) => showErrorAlert(context, error));
 
                      

@@ -52,7 +52,7 @@ class _CardProcessingScreenState extends State<CardProcessingScreen>
       width: 300,
     );
 
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) async {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       String cardErrorMessage = await verifyCardDetails();
 
       if (cardErrorMessage.isEmpty) {

@@ -161,7 +161,7 @@ class AppSettingsComponent extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
     );
     ButtonStyle buttonStyle = ElevatedButton.styleFrom(
-      primary: Colors.transparent,
+      backgroundColor: Colors.transparent,
       shadowColor: Colors.transparent,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     );

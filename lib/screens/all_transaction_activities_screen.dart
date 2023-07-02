@@ -234,7 +234,7 @@ class AllTransactionActivitiesState extends State<AllTransactionActivities> {
             width: double.infinity,
             child: Builder(builder: (context) {
               if (error != null) {
-                WidgetsBinding.instance!.addPostFrameCallback(
+                WidgetsBinding.instance.addPostFrameCallback(
                     (_) => showErrorAlert(context, error!));
 
                 return activitiesLoadingList(10);

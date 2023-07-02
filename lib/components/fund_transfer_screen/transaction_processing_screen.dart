@@ -81,7 +81,7 @@ class _TransactionProcessingScreenState
           _exitScreen = true;
         });
       } else {
-        WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+        WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
           executeTransaction();
         });
       }
@@ -160,8 +160,7 @@ class _TransactionProcessingScreenState
                       child: Text("View Transaction Receipt"),
                       style: OutlinedButton.styleFrom(
             
-                        primary: Colors.blue,
-                        shape: const RoundedRectangleBorder(
+                        foregroundColor: Colors.blue, shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(18),
                           ),
@@ -253,7 +252,7 @@ class _TransactionProcessingScreenState
                 child: Center(
                   child: Builder(builder: (context) {
                     if (error != null && error != 'none') {
-                      WidgetsBinding.instance!.addPostFrameCallback(
+                      WidgetsBinding.instance.addPostFrameCallback(
                           (_) => showErrorAlert(context, error!));
 
                       return Wrap(

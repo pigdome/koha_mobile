@@ -201,7 +201,7 @@ class _ChooseUsernameState extends State<ChooseUsername> {
                   onPressed: trySettingUsername,
                   child: Text('Confirm'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent,
+                    backgroundColor: Colors.transparent,
                     shadowColor: Colors.transparent,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),

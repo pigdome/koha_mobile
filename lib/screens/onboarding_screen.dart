@@ -130,7 +130,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           curve: Curves.ease,
           duration: Duration(seconds: 2),
           itemCount: pages.length,
-          itemBuilder: (index, value) {
+          itemBuilder: (index) {
             // PageData page = pages[index % pages.length];
             PageData page = pages[index];
             return Column(children: [
@@ -139,18 +139,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: Theme(
                   data: ThemeData(
                     textTheme: TextTheme(
-                      headline6: TextStyle(
+                      titleLarge: TextStyle(
                           color: page.textColor,
                           fontWeight: FontWeight.w600,
                           fontFamily: 'Helvetica',
                           letterSpacing: 0.0,
                           fontSize: 15),
-                      subtitle2: TextStyle(
+                      titleSmall: TextStyle(
                         color: page.textColor,
                         fontWeight: FontWeight.w300,
                         fontSize: 18,
                       ),
-                      bodyText2: GoogleFonts.poppins(
+                      bodyMedium: GoogleFonts.poppins(
                         color: page.textColor,
                         letterSpacing: 0.0,
                         fontSize: 15,
@@ -202,7 +202,7 @@ class PageCard extends StatelessWidget {
       ),
       child: Text(
         page.title!,
-        style: Theme.of(context).textTheme.bodyText2,
+        style: Theme.of(context).textTheme.bodyMedium,
         textAlign: TextAlign.left,
       ),
     );

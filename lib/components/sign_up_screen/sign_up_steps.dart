@@ -207,7 +207,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
                               fontSize: 16, fontWeight: FontWeight.w600),
                         ),
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.transparent,
+                          backgroundColor: Colors.transparent,
                           shadowColor: Colors.transparent,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
@@ -239,8 +239,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
                                     ),
                                   ]),
                               style: TextButton.styleFrom(
-                                primary: Colors.transparent,
-                                shadowColor: Colors.transparent,
+                                foregroundColor: Colors.transparent, shadowColor: Colors.transparent,
                                 elevation: 0,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20)),
@@ -271,8 +270,7 @@ class _SignUpStepsState extends State<SignUpSteps> {
                                     )
                                   ]),
                               style: TextButton.styleFrom(
-                                primary: Colors.transparent,
-                                shadowColor: Colors.transparent,
+                                foregroundColor: Colors.transparent, shadowColor: Colors.transparent,
                                 elevation: 0,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20)),

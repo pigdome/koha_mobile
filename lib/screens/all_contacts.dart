@@ -132,7 +132,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
   }
 
   void _showInitiateTransactionDialogBox(Map<String, dynamic> otherParty) {
-    WidgetsBinding.instance!.addPostFrameCallback((_) => showDialog(
+    WidgetsBinding.instance.addPostFrameCallback((_) => showDialog(
         context: context,
         builder: (context) => AlertDialog(
               title: Text(
@@ -167,8 +167,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                                   _makeATransaction(otherParty, 'debit'),
                               child: Text('Pay'),
                               style: ElevatedButton.styleFrom(
-                                shadowColor: Colors.transparent,
-                                primary: Colors.transparent,
+                                shadowColor: Colors.transparent, backgroundColor: Colors.transparent,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
                               )),
@@ -190,8 +189,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
                                   _makeATransaction(otherParty, 'credit'),
                               child: Text('Request'),
                               style: ElevatedButton.styleFrom(
-                                shadowColor: Colors.transparent,
-                                primary: Colors.transparent,
+                                shadowColor: Colors.transparent, backgroundColor: Colors.transparent,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
                               )),
@@ -241,7 +239,7 @@ class _AllContactsScreenState extends State<AllContactsScreen> {
     List<Widget> children;
     if (snapshot.hasData) {
       if (snapshot.data!.keys.join().toLowerCase().contains("error")) {
-        WidgetsBinding.instance!.addPostFrameCallback(
+        WidgetsBinding.instance.addPostFrameCallback(
             (_) => showErrorAlert(context, snapshot.data!));
 
         return contactsLoadingList(10);
